@@ -32,6 +32,9 @@ set autoindent
 " line numbering 
 set number relativenumber
 
+" set scrolloff to keep cursor in the middle
+set scrolloff=999
+
 " plugins
 call plug#begin('~/.local/shared/nvim/plugged')
 
