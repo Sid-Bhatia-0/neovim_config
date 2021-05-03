@@ -58,3 +58,7 @@ call plug#end()
 
 " required at least for nerdcommenter plugin
 filetype plugin on
+
+" navigating coc autocompletion list
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
