@@ -45,6 +45,8 @@ Plug 'tpope/vim-surround'
 
 Plug 'tpope/vim-repeat'
 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 call plug#end()
 
 " required at least for nerdcommenter plugin
