@@ -31,3 +31,21 @@ set autoindent
 
 " line numbering 
 set number relativenumber
+
+" plugins
+call plug#begin('~/.local/shared/nvim/plugged')
+
+Plug 'JuliaEditorSupport/julia-vim'
+
+Plug 'jiangmiao/auto-pairs'
+
+Plug 'preservim/nerdcommenter'
+
+Plug 'tpope/vim-surround'
+
+Plug 'tpope/vim-repeat'
+
+call plug#end()
+
+" required at least for nerdcommenter plugin
+filetype plugin on
