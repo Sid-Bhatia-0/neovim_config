@@ -39,6 +39,12 @@ set scrolloff=999
 nnoremap <Leader>j :bnext<CR>
 nnoremap <Leader>k :bprevious<CR>
 
+" navigate windows more easily
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
 " plugins
 call plug#begin('~/.local/shared/nvim/plugged')
 
