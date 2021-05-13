@@ -45,6 +45,10 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" navigate tabs more easily
+nnoremap <A-h> :tabprevious<CR>
+nnoremap <A-l> :tabnext<CR>
+
 " plugins
 call plug#begin('~/.local/shared/nvim/plugged')
 
