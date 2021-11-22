@@ -65,6 +65,8 @@ Plug 'tpope/vim-surround'
 
 Plug 'tpope/vim-repeat'
 
+Plug 'christoomey/vim-tmux-navigator'
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
