@@ -52,7 +52,7 @@ nnoremap <C-l> <C-w>l
 nnoremap <A-h> :tabprevious<CR>
 nnoremap <A-l> :tabnext<CR>
 
-" plugins
+" plugins using https://github.com/junegunn/vim-plug
 call plug#begin('~/.local/shared/nvim/plugged')
 
 Plug 'JuliaEditorSupport/julia-vim'
