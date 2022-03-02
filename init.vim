@@ -52,6 +52,8 @@ nnoremap <C-l> <C-w>l
 nnoremap <A-h> :tabprevious<CR>
 nnoremap <A-l> :tabnext<CR>
 
+nnoremap <C-p> :<C-u>FZF<CR>
+
 " plugins using https://github.com/junegunn/vim-plug
 call plug#begin('~/.local/shared/nvim/plugged')
 
@@ -68,6 +70,8 @@ Plug 'tpope/vim-repeat'
 Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 call plug#end()
 
