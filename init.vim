@@ -60,6 +60,8 @@ nnoremap <C-p> :<C-u>FZF<CR>
 " plugins using https://github.com/junegunn/vim-plug
 call plug#begin('~/.local/shared/nvim/plugged')
 
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+
 Plug 'JuliaEditorSupport/julia-vim'
 
 Plug 'jiangmiao/auto-pairs'
@@ -84,3 +86,6 @@ filetype plugin on
 " navigating coc autocompletion list
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" colorscheme
+colorscheme catppuccin-frappe
