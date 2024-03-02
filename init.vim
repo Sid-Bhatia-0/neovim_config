@@ -62,6 +62,8 @@ call plug#begin('~/.local/shared/nvim/plugged')
 
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 Plug 'JuliaEditorSupport/julia-vim'
 
 Plug 'jiangmiao/auto-pairs'
