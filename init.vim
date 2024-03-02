@@ -35,6 +35,9 @@ set autoindent
 " line numbering 
 set number relativenumber
 
+" set a darker highlight color in visual mode
+highlight Visual ctermbg=240
+
 " set scrolloff to keep cursor in the middle
 set scrolloff=999
 
