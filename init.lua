@@ -38,7 +38,26 @@ vim.fn['plug#']('junegunn/fzf', {['do'] = vim.fn['fzf#install']})
 
 vim.call('plug#end')
 
-vim.cmd('colorscheme catppuccin')
+require("catppuccin").setup({
+    flavor = "frappe",
+    highlight_overrides = {
+        frappe = function(frappe)
+            return {
+                TabLineSel = { bg = "#51576D" },
+                Visual = { bg = "#51576D" },
+            }
+        end,
+    },
+    color_overrides = {
+        frappe = {
+            overlay0 = "#999999", -- comments
+            surface1 = "#959BB1", -- line numbers, tabnames, highlighted tab background color
+        },
+    },
+})
+
+vim.cmd.colorscheme("catppuccin-frappe")
+
 vim.cmd('set clipboard+=unnamedplus')
 --vim.cmd('inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"')
 --vim.cmd('inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"')
